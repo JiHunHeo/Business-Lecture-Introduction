@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>강의 진행 설명</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="shortcut icon" href="./img/img/sbsFavicon_last.png" />
+        <style>
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background-image: url(./img/img/background_bonobono2.jpg);
+            }
+            #wrap {
+                margin: 0 auto;
+            }
+            #wrap > h2 {
+                text-align: center;
+            }
+            section {
+                display: flex;
+                justify-content: center;
+            }
+            section > div {
+                width: 50%;
+            }
+            .web > h1,
+            .javascript > h1,
+            .java > h1,
+            .python > h1 {
+                display: inline-block;
+                margin: 0 50px 0 200px;
+                text-align: center;
+            }
+            li {
+                margin: 6px auto;
+                font-size: 22px;
+            }
+            .shot {
+            }
+            @media (min-width: 600px) {
+                body {
+                    background-color: aqua;
+                }
+            }
+            @media (min-width: 900px) {
+                body {
+                    background-color: coral;
+                }
+            }
+            @media (min-width: 1200px) {
+                body {
+                    background-color: white;
+                }
+            }
+            ol > li:hover {
+                font-weight: 700;
+            }
+            .class_list {
+                margin-left: 20px;
+                display: none;
+            }
+            .class_list > li {
+                font-size: 19px;
+                color: #000;
+                font-weight: 500;
+                letter-spacing: 0.2em;
+            }
+            .img {
+                display: none;
+                justify-content: space-between;
+            }
+            .img img {
+                display: block;
+            }
+            .ment {
+                text-align: center;
+                font-size: 40px;
+                letter-spacing: 0.3em;
+                color:#000;
+            }
+            .last_ment {
+                display: none;
+                margin-top: 20px;
+                font-size: 100px;
+                letter-spacing: 0.5em;
+
+            }
+            .button {
+                display: inline-block;
+                border-radius: 8px;
+            }
+            #end {
+                display: block;
+                padding: 10px 20px;
+                font-size: 34px;
+                border-radius: 35px;
+                letter-spacing: 0.2em;
+                margin: 0 auto;
+                font-weight: 600;
+            }
+            button {
+                cursor: pointer;
+            }
+            #button_list{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            #play_music {
+                display: block;
+                padding: 10px;
+                margin-right: 20px;
+                border-radius: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            video {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+            #play_next {
+                display: block;
+                padding: 10px;
+                margin-right: 20px;
+                border-radius: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            #play_song {
+                display: block;
+                padding: 10px;
+                border-radius: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            #main_music{
+                display: block;
+                padding: 10px;
+                margin-right: 20px;
+                border-radius: 30px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            #under_img {
+                margin-top: 20px;
+                text-align: center;
+            }
+            #end_img {
+                display: none;
+                margin-top: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <main id="all_view">
+                <section class="main1">
+                    <div class="web">
+                        <h1>웹 강의 진행 순서</h1>
+                        <button class="button" id="web_open">⚡OPEN⚡</button>
+                        <ol class="class_list" id="web_list">
+                            <li>HTML5의 시작</li>
+                            <li>웹 편집기와 FTP 프로그램</li>
+                            <li>텍스트 관련 태그</li>
+                            <li>이미지 태그와 하이퍼링크</li>
+                            <li>CSS 기초</li>
+                            <li>공간 분할 태그와 레이아수을 위한 스타일</li>
+                            <li>배치 속성</li>
+                            <li>표현 속성과 기타 속성</li>
+                            <li>다양한 CSS3 선택자의 활용</li>
+                            <li>배경 이미지와 다양한 색상 표현</li>
+                            <li>시멘틱 구조</li>
+                            <li>HTML5와 멀티미디어</li>
+                            <li>표를 만드는 태그</li>
+                            <li>입력 양식 태그</li>
+                            <li>위치 속성</li>
+                            <li>변형 속성(transform) / 변환 속성(transition)</li>
+                            <li>애니메이션 속성(@keyframes)</li>
+                            <li>모바일 웹</li>
+                            <li>반응형 웹(@media)</li>
+                            <li>포트폴리오를 위한 프로젝트 제작 1단계(Copy)</li>
+                            <li>포트폴리오를 위한 프로젝트 제작 2단계(Renewal)</li>
+                            <li>포트폴리오를 위한 프로젝트 제작 3단계(Mini Project)</li>
+                        </ol>
+                    </div>
+                    <div class="javascript">
+                        <h1>프론트 앤드 강의 진행 순서</h1>
+                        <button class="button" id="front_open">⚡OPEN⚡</button>
+                        <ol class="class_list" id="javascript_list">
+                            <li>Javascript의 시작</li>
+                            <li>Javascript에서 사용되는 자료형</li>
+                            <li>Javascript에서 사용되는 연산자</li>
+                            <li>웹 브라우저 제어</li>
+                            <li>태그 선택하기</li>
+                            <li>객체란?</li>
+                            <li>선언과 호출</li>
+                            <li>변수(Variable)</li>
+                            <li>배열(Array)</li>
+                            <li>함수(Function)</li>
+                            <li>매개변수(Parameter)와 인자(Argument)</li>
+                            <li>제어문 기초</li>
+                            <li>조건문과 사용</li>
+                            <li>반복문과 사용</li>
+                            <li>리턴문과 사용</li>
+                            <li>Javascript의 객체 프로퍼티와 메소드</li>
+                            <li>Javascript를 활용하는 프로젝트 만들기</li>
+                            <li>jQuery 사용법</li>
+                            <li>React.js 기초</li>
+                            <li>Vue.js 기초</li>
+                            <li>포트폴리오를 위한 프로젝트 제작 1단계(Mini Project)</li>
+                            <li>포트폴리오를 위한 프로젝트 제작 2단계(Creat Web Site)</li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="main2">
+                    <div class="java">
+                        <h1>자바 강의 진행 순서</h1>
+                        <button class="button" id="java_open">⚡OPEN⚡</button>
+                        <ol class="class_list" id="java_list">
+                            <li>JAVA의 시작</li>
+                            <li>변수와 자료형 / 상수와 형변환</li>
+                            <li>연산자 / 제어문</li>
+                            <li>메소드와 변수의 스코프 / 클래스와 인스턴스</li>
+                            <li>패키지와 클래스 패스 / 정보은닉과 캡슐화</li>
+                            <li>클래스 변수와 클래스 메소드</li>
+                            <li>메소드 오버로딩과 String클래스</li>
+                            <li>콘솔 입력과 출력 / 배열</li>
+                            <li>클래스의 상속 / 인터페이스와 추상 클래스</li>
+                            <li>예외처리</li>
+                            <li>JAVA의 메모리 모델과 Object 클래스</li>
+                            <li>JAVA의 기본 클래스</li>
+                            <li>제네릭</li>
+                            <li>컬렉션 프레임 워크</li>
+                            <li>열거형, 가변 인자 그리고 어노테이션</li>
+                            <li>네스티드 클래스</li>
+                            <li>람다 표현식</li>
+                            <li>스트림</li>
+                            <li>시간과 날짜의 처리</li>
+                            <li>IO 스트림</li>
+                            <li>NIO 그리고 NIO2</li>
+                            <li>쓰레드 그리고 동기화</li>
+                        </ol>
+                    </div>
+                    <div class="python">
+                        <h1>파이썬 강의 진행 순서</h1>
+                        <button class="button" id="python_open">⚡OPEN⚡</button>
+                        <ol class="class_list" id="python_list">
+                            <li>파이썬에게 질문하기</li>
+                            <li>간단한 함수 만들기</li>
+                            <li>프로그램 사용자로부터의 입력 그리고 코드의 반복</li>
+                            <li>int형 데이터와 float형 데이터</li>
+                            <li>리스트와 문자열</li>
+                            <li>리스트와 문자열의 함수들</li>
+                            <li>True, False 그리고 if와 그 형제들</li>
+                            <li>for 루프와 while 루프</li>
+                            <li>튜플과 레인지</li>
+                            <li>함수에 대한 추가적인 설명들</li>
+                            <li>모듈의 이해 그리고 수학 모듈 이용하기</li>
+                            <li>딕셔너리</li>
+                            <li>클래스와 객체</li>
+                            <li>예외처리</li>
+                            <li>레퍼런스 카운트와 가비지 컬렉션</li>
+                            <li>객체처럼 다뤄지는 함수 그리고 람다</li>
+                            <li>제너레이터 함수</li>
+                            <li>제너레이터 표현식</li>
+                            <li>상속</li>
+                            <li>스페셜 메소드</li>
+                            <li>프로퍼티</li>
+                            <li>클래스 메소드와 static메소드</li>
+                            <li>__name__&__main__</li>
+                        </ol>
+                    </div>
+                </section>
+            </main>
+            <h2 class="ment">프로그래머 / 개발자에게 필요한 컴퓨터적 사고를 기를 수 있는 강의<br>발전가능성을 키울 수 있고, 문제해결능력을 기를 수 있는 강의를 추구합니다</h2>
+            <button id="end">마무으리</button>
+            <div id="button_list">
+                <button id="main_music">🔊 Play Music 🎶</button>
+                <button id="play_music">🔊 Play Music 🎶</button>
+                <button id="play_next">🔊 Other Music 🎶</button>
+                <button id="play_song">🔊 Other Music 🎶</button>
+            </div>
+            <div id="under_img">
+                <img src="./img/img/UmZzal.gif" alt="붱철이 부럽지가 않아">
+            </div>
+            <div id="end_img">
+                <img src="./img/img/dicaprio.gif" alt="디카프리오 박수">
+            </div>
+            <h2 class="last_ment" id="ment">🥰감사합니다🥰</h2>
+        </div>
+        <div>
+            <video id="video" muted controls>
+                <source src="./img/MongHwanDance-Piano.mp4">
+            </video>
+            <video id="music" muted controls>
+                <source src="./img/The_Letter-Piano.mp4">
+            </video>
+            <video id="song" muted controls>
+                <source src="./img/Ten_Lee_Dong_Shin_&_Koak_Dong_Hyun-Caruso.mp4">
+            </video>
+            <video id="main_song" muted controls>
+                <source src="./img/Sample_video.mp4">
+            </video>
+        </div>
+        <div class="img">
+            <p><h2>HTML</h2><img class="shot" src="./img/img/html.png" alt="" /></p>
+            <p><h2>CSS</h2><img class="shot" src="./img/img/css.png" alt="" /></p>
+            <p><h2>Figma</h2><img class="shot" src="./img/img/figma.png" alt="" /></p>
+            <p><h2>jQuery</h2><img class="shot" src="./img/img/jQuery.png" alt="" /></p>
+            <p><h2>Javascript</h2><img class="shot" src="./img/img/javascript.png" alt="" /></p>
+            <p><h2>Java</h2><img class="shot" src="./img/img/Java.png" alt="" /></p>
+            <p><h2>Python</h2><img class="shot" src="./img/img/Python.png" alt="" /></p>
+        </div>
+        <script>
+            let webOpenButton = document.getElementById('web_open')
+            let javascriptOpenButton = document.getElementById('front_open')
+            let javaOpenButton = document.getElementById('java_open')
+            let pythonOpenButton = document.getElementById('python_open')
+            let endButton = document.getElementById('end')
+            let ment = document.getElementById('ment')
+            let mainPlayer = document.getElementById('main_song')
+            let videoPlayer = document.getElementById('video')
+            let nextPlayer = document.getElementById('music')
+            let songPlayer = document.getElementById('song')
+            let mainButton = document.getElementById('main_music')
+            let playButton = document.getElementById('play_music')
+            let nextButton = document.getElementById('play_next')
+            let songButton = document.getElementById('play_song')
+            let endImg = document.getElementById('end_img')
+
+            webOpenButton.addEventListener('click', open_web)
+            javascriptOpenButton.addEventListener('click', open_javascript)
+            javaOpenButton.addEventListener('click', open_java)
+            pythonOpenButton.addEventListener('click', open_python)
+            endButton.addEventListener('click', ending_motion)
+            playButton.addEventListener('click', play_music)
+            nextButton.addEventListener('click', next_music)
+            songButton.addEventListener('click', song_music)
+            mainButton.addEventListener('click', main_music)
+
+            function main_music () {
+                if (mainPlayer.muted == true) {
+                    mainPlayer.muted = false
+                    mainPlayer.loop = true
+                    videoPlayer.muted = true
+                    nextPlayer.muted = true
+                    songPlayer.muted = true
+                    mainPlayer.play()
+                    videoPlayer.pause()
+                    nextPlayer.pause()
+                    songPlayer.pause()
+                    mainButton.textContent = "🔈 Pause Music 🎵"
+                    playButton.textContent = "🔊 Play Music 🎶"
+                    songButton.textContent = "🔊 Other Music 🎶"
+                    nextButton.textContent = "🔊 Other Music 🎶"
+                } else {
+                    mainPlayer.pause()
+                    mainPlayer.muted = true
+                    mainButton.textContent = "🔊 Play Music 🎶"
+                }
+            }
+            function play_music () {
+                if (videoPlayer.muted == true){
+                    videoPlayer.muted = false
+                    videoPlayer.loop = true
+                    nextPlayer.muted = true
+                    songPlayer.muted = true
+                    mainPlayer.muted = true
+                    videoPlayer.play()
+                    nextPlayer.pause()
+                    songPlayer.pause()
+                    mainPlayer.pause()
+                    mainButton.textContent = "🔊 Play Music 🎶"
+                    playButton.textContent = "🔈 Pause Music 🎵"
+                    songButton.textContent = "🔊 Other Music 🎶"
+                    nextButton.textContent = "🔊 Other Music 🎶"
+                } else {
+                    videoPlayer.pause()
+                    videoPlayer.muted = true
+                    playButton.textContent = "🔊 Play Music 🎶"
+                }
+            }
+            function next_music () {
+                if (nextPlayer.muted == true) {
+                    nextPlayer.muted = false
+                    videoPlayer.muted = true
+                    songPlayer.muted = true
+                    nextPlayer.loop = true
+                    mainPlayer.muted = true
+                    videoPlayer.pause()
+                    songPlayer.pause()
+                    nextPlayer.play()
+                    mainPlayer.pause()
+                    mainButton.textContent = "🔊 Play Music 🎶"
+                    playButton.textContent = "🔊 Play Music 🎶"
+                    nextButton.textContent = "🔈 Pause Music 🎵"
+                    songButton.textContent = "🔊 Other Music 🎶"
+                } else {
+                    nextPlayer.pause()
+                    nextPlayer.muted = true
+                    nextButton.textContent = "🔊 Other Music 🎶"
+                }
+            }
+            function song_music () {
+                if (songPlayer.muted == true) {
+                    songPlayer.muted = false
+                    videoPlayer.muted = true
+                    nextPlayer.muted = true
+                    songPlayer.loop = true
+                    mainPlayer.muted = true
+                    videoPlayer.pause()
+                    nextPlayer.pause()
+                    songPlayer.play()
+                    mainPlayer.pause()
+                    mainButton.textContent = "🔊 Play Music 🎶"
+                    playButton.textContent = "🔊 Play Music 🎶"
+                    nextButton.textContent = "🔊 Other Music 🎶"
+                    songButton.textContent = "🔈 Pause Music 🎵"
+                } else {
+                    songPlayer.pause()
+                    songPlayer.muted = true
+                    songButton.textContent = "🔊 Other Music 🎶"
+                }
+            }
+
+            function ending_motion(){
+                let mainDisplay = document.getElementById('all_view')
+                let buttonList = document.getElementById('button_list')
+                let underImg = document.getElementById('under_img')
+                if(ment.style.display == ""){
+                    mainDisplay.style.display = "none"
+                    endButton.style.display = "none"
+                    buttonList.style.display = "none"
+                    underImg.style.display = "none"
+                    endImg.style.display = 'block'
+                    ment.style.display = "block"
+                }
+            }
+
+            function open_web(){
+                let webList = document.getElementById('web_list')
+                console.log(webList.style.display)
+                if (webList.style.display == ""){
+                    webList.style.display = "block"
+                    webOpenButton.textContent = "⚡CLOSE⚡"
+                } else {
+                    webList.style.display = ""
+                    webOpenButton.textContent = "⚡OPEN⚡"
+                }
+            }
+            function open_javascript(){
+                let javascriptList = document.getElementById('javascript_list')
+                console.log(javascriptList.style.display)
+                if (javascriptList.style.display == ""){
+                    javascriptList.style.display = "block"
+                    javascriptOpenButton.textContent = "⚡CLOSE⚡"
+                } else {
+                    javascriptList.style.display = ""
+                    javascriptOpenButton.textContent = "⚡OPEN⚡"
+                }
+            }
+            function open_java(){
+                let javaList = document.getElementById('java_list')
+                console.log(javaList.style.display)
+                if (javaList.style.display == ""){
+                    javaList.style.display = "block"
+                    javaOpenButton.textContent = "⚡CLOSE⚡"
+                } else {
+                    javaList.style.display = ""
+                    javaOpenButton.textContent = "⚡OPEN⚡"
+                }
+            }
+            function open_python (){
+                let pythonList = document.getElementById('python_list')
+                console.log(pythonList.style.display)
+                if (pythonList.style.display == ""){
+                    pythonList.style.display = "block"
+                    pythonOpenButton.textContent = "⚡CLOSE⚡"
+                } else {
+                    pythonList.style.display = ""
+                    pythonOpenButton.textContent = "⚡OPEN⚡"
+                }
+            }
+        </script>
+    </body>
+</html>
