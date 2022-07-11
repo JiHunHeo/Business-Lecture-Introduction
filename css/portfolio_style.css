@@ -205,9 +205,22 @@
         opacity: 1;
     }
 }
+.m1_class {
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 500;
+    text-shadow: 8px 8px 8px #383839;
+    opacity: 0;
+    animation-name: m1_name;
+    animation-delay: 5.5s;
+}
 .m1_name {
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 60px;
